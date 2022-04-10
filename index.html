@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+  <title>week 10 project</title>
+</head>
+
+
+<body class="container">
+  <br>
+  <div class="card">
+    <h3 class="text-center mt-3">Book List</h3>
+    <div class="card-body">
+      <div class="row">
+        <div class="col-sm">
+          <div class="form-group">
+            <label for="new-start-date">Start Date</label>
+            <input type="date" class="form-control" id="new-start-date">
+          </div>
+        </div>
+        <div class="col-sm">
+          <div class="form-group">
+            <label for="new-end-date">End Date</label>
+            <input type="date" class="form-control" id="new-end-date">
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm">
+          <div class="form-group">
+            <label for="new-book">Book Title</label>
+            <input type="text" class="form-control" id="new-book" placeholder="book title">
+          </div>
+        </div>
+      </div>
+      <br>
+      <div>
+        <button id="add"  class="btn  btn-primary from-control">Create</button>
+      </div>
+    </div>
+  </div>
+  
+    <table id="list" class="table table-striped table-dark table-border border-light">
+     
+      <tr>
+        <th>Book Title</th>
+        <th>Date Borrowed</th>
+        <th>Start Date</th>
+        <th>Due Date</th>
+        <th>Actions</th>        
+      </tr>
+    
+         
+    </table>
+
+
+
+
+    <script src="project.js"></script>
+  <script src="node_modules/jquery/dist/jquery.js"></script>
+  <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+</html>
